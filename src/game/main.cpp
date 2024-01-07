@@ -1,8 +1,10 @@
 #include <iostream>
-#include "AnApi.h"
+#include "Window.h"
 
 int main()
 {
-	std::cout << "hello world" << std::endl;
+	Window w;
+
+	w.DoAllStuff();
 	return 1;
 }

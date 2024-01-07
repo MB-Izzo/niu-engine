@@ -1,0 +1,10 @@
+^E:\GAMEENGINE\NIU\BUILD\CMAKEFILES\BB86E9EC5F686EBB722DBA29BCB2F5D0\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/GameEngine/NIU -BE:/GameEngine/NIU/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/GameEngine/NIU/build/Niu.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

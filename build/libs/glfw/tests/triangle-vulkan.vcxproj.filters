@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\GameEngine\NIU\libs\glfw\tests\triangle-vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\GameEngine\NIU\libs\glfw\deps\glad_vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\GameEngine\NIU\libs\glfw\deps\glad\vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\GameEngine\NIU\libs\glfw\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{BACB87AD-12B5-3D83-8454-1D69FA50D972}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9188D287-0425-3F8F-B4C1-29C779FD1E2D}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

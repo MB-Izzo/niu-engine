@@ -1,7 +1,21 @@
 #include <Renderer.h>
+#include <GLFW/glfw3.h>
+#include <iostream>
+
 
 int main()
 {
-	int a = multiplyShit(2, 3);
-	return 1;
+
 }
+
+
+// glfw: whenever the window size changed (by OS or user resize) this callback function executes
+// ---------------------------------------------------------------------------------------------
+/*
+void framebuffer_size_callback(GLFWwindow* window, int width, int height)
+{
+	// make sure the viewport matches the new window dimensions; note that width and 
+	// height will be significantly larger than specified on retina displays.
+	glViewport(0, 0, width, height);
+}
+*/

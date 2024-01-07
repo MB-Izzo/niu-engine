@@ -1,17 +1,22 @@
+#pragma once
+
 #ifdef _WIN32
 #define DLL_EXPORT __declspec(dllexport)
 #else
 #define DLL_EXPORT
 #endif
 
-extern "C" {
-	// Example function 1
-	DLL_EXPORT int add(int a, int b) {
-		return a + b;
-	}
+class  TestClass {
+public:
+	TestClass() {};
+	~TestClass() {};
 
-	// Example function 2
-	DLL_EXPORT double multiplyShit(int x, int y) {
-		return x * y;
-	}
-}
+	DLL_EXPORT void load(void* proc);
+	 DLL_EXPORT void initStuff();
+	 DLL_EXPORT void renderStuff();
+	 DLL_EXPORT void cleanUp();
+
+private:
+	unsigned int shaderProgram;
+	unsigned int VBO, VAO, EBO;
+};

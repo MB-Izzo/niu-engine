@@ -1,6 +1,6 @@
 #include <Renderer.h>
 
-void DoMultiply(int a, int b)
+int DoMultiply(int a, int b)
 {
-	multiplyShit(2, 1);
+	return a * b;
 }
